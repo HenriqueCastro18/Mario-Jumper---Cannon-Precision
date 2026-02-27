@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Jumper - Cannon Precision</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <main class="game-board">
+        <header class="sky">
+            <div class="game-logo" id="main-logo">
+                <h1>Mario Jumper</h1>
+            </div>
+            <div class="score-container hidden" id="score-board">
+                PONTOS: <span id="score-value">0</span>
+            </div>
+            <img src="./image/mario1.png" class="cloud" alt="Nuvem">
+        </header>
+
+        <section class="action-layer">
+            <div id="points-animation-container"></div>
+            <div class="overlay" id="start-menu">
+                <button class="btn-action" onclick="startGame()">JOGAR</button>
+            </div>
+            <div class="overlay hidden" id="game-over-screen">
+                <h2 class="death-message">GAME OVER</h2>
+                <button class="btn-action" onclick="location.reload()">REENTRAR</button>
+            </div>
+
+            <div class="player hidden" id="mario-player">
+                <img src="./image/mario3.png" alt="Mario">
+            </div>
+
+            <div class="obstacle hidden" id="fireball">
+                <img src="./image/mario2.png" alt="Bola de Fogo">
+            </div>
+            <div class="obstacle hidden" id="fireball2">
+                <img src="./image/mario2.png" alt="Bola de Fogo">
+            </div>
+            <div class="obstacle hidden" id="fireball3">
+                <img src="./image/mario2.png" alt="Bola de Fogo">
+            </div>
+
+            <div class="cannon hidden" id="cannon">
+                <img src="./image/mario4.png" alt="Canhão">
+            </div>
+        </section>
+
+        <footer class="ground">
+            <div class="grass"></div>
+            <div class="dirt"></div>
+        </footer>
+    </main>
+    <script src="./script/script.js"></script>
+</body>
+</html>
