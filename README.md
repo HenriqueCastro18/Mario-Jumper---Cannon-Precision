@@ -1,55 +1,55 @@
-🍄 Mario Jumper - Cannon Precision
-Uma experiência de jogo Endless Runner inspirada no universo Super Mario, construída com HTML5, CSS3 e JavaScript puro. O projeto foca em precisão de saltos, gerenciamento de estados de animação e lógica de colisão dinâmica baseada em coordenadas de tela.
+# 🍄 MARIO JUMPER - CANNON PRECISION
 
-🎮 Demonstração do Projeto
-Confira abaixo o vídeo de 40 segundos demonstrando a progressão de dificuldade, os alertas de velocidade e a ativação dos múltiplos obstáculos:
+Uma experiência de jogo **Endless Runner** inspirada no universo Super Mario, construída com **HTML5, CSS3 e JavaScript puro**. O projeto foca em precisão de saltos, gerenciamento de estados de animação e lógica de colisão dinâmica baseada em coordenadas de tela.
+
+---
+
+## 📺 DEMONSTRAÇÃO DO PROJETO
+
+CONFIRA ABAIXO O VÍDEO DE 40 SEGUNDOS DEMONSTRANDO A PROGRESSÃO DE DIFICULDADE, OS ALERTAS DE VELOCIDADE E A ATIVAÇÃO DOS MÚLTIPLOS OBSTÁCULOS:
 
 <div align="center">
-<video src="./image/Mario Jumper.mp4" controls width="100%"></video>
-
-O vídeo destaca a transição entre as fases e o sistema de pontuação dinâmica.
-
+  <video src="https://github.com/user-attachments/assets/04161163-713c-4632-ad38-db4f0c62d060" controls width="100%"></video>
+  
+  <p><i>O VÍDEO DESTACA A TRANSIÇÃO ENTRE AS FASES E O SISTEMA DE PONTUAÇÃO DINÂMICA.</i></p>
 </div>
 
-🚀 Funcionalidades Demonstradas
+---
+
+## 🚀 FUNCIONALIDADES DEMONSTRADAS
+
 O projeto implementa uma curva de aprendizado que exige cada vez mais reflexo do jogador:
 
-Sistema de Pontuação: Cada obstáculo superado adiciona 1600 pontos ao placar.
+* **SISTEMA DE PONTUAÇÃO:** Cada obstáculo superado adiciona 1600 pontos ao placar.
+* **DIFICULDADE PROGRESSIVA:** A velocidade da animação aumenta em marcos estratégicos (300, 600, 900 pontos).
+* **MÚLTIPLOS PROJÉTEIS:** Ao atingir 1200 e 1600 pontos, canhões adicionais são ativados.
+* **FEEDBACK AO USUÁRIO:** Alertas visuais na tela indicam mudanças de velocidade e novos desafios.
 
-Dificuldade Progressiva: A velocidade da animação (currentGameSpeed) aumenta em marcos estratégicos (300, 600, 900 pontos).
+---
 
-Múltiplos Projéteis: Ao atingir 1200 e 1600 pontos, canhões adicionais são ativados, disparando fireball2 e fireball3 com delays específicos.
+## 🛠️ DETALHES TÉCNICOS
 
-Feedback ao Usuário: Alertas visuais na tela indicam quando a velocidade aumenta ou quando novos canhões entram em jogo.
+A lógica central utiliza um `gameLoop` que verifica a cada 10ms a posição dos elementos no DOM:
 
-📸 Capturas de Tela (Interface)
-Interface de Jogo e HUD
-[COLOCAR IMAGEM: Print do jogo mostrando o Score Board e o cenário]
+* **DETECÇÃO DE COLISÃO:** Calcula a posição horizontal da bola de fogo em relação ao Mario (altura < 80px).
+* **ANIMAÇÕES CSS:** O movimento é controlado por `@keyframes`, garantindo performance nativa no navegador.
+* **RESPONSIVIDADE:** O script inclui uma trava de segurança para telas menores que 1300px.
 
-Estado de Game Over
-[COLOCAR IMAGEM: Print da tela final com a mensagem de derrota e botão de reiniciar]
+---
 
-🛠️ Detalhes Técnicos
-A lógica central utiliza um gameLoop que verifica a cada 10ms a posição dos elementos no DOM:
+## ⚙️ COMO EXECUTAR
 
-Detecção de Colisão: Calcula se a posição horizontal da bola de fogo sobrepõe o Mario enquanto ele está abaixo de uma altura específica (80px).
+1.  **CLONE O REPOSITÓRIO:**
+    ```bash
+    git clone [https://github.com/seu-usuario/Mario-Jumper---Cannon-Precision.git]
+    ```
+2.  **ABRA O ARQUIVO:** Localize o `index.html` e abra em qualquer navegador moderno.
+3.  **COMANDOS:** Pressione **ESPAÇO** ou a **SETA PARA CIMA** para pular.
 
-Animações CSS: O movimento é controlado por @keyframes no CSS, permitindo um desempenho fluido diretamente no navegador.
+---
 
-Responsividade: O script inclui uma verificação inicial para garantir que o jogador tenha uma área de visualização adequada (mínimo de 1300px).
+## 📄 CRÉDITOS E LICENÇA
 
-⚙️ Como Executar
-Clone o repositório:
-
-Bash
-git clone https://github.com/seu-usuario/Mario-Jumper---Cannon-Precision.git
-Abra o arquivo index8.html em seu navegador de preferência.
-
-Pressione Espaço ou a Seta para Cima para pular.
-
-📄 Créditos e Licença
-Desenvolvimento: Henrique Castro
-
-Assets: Imagens inspiradas na franquia Super Mario (Nintendo).
-
-Licença: Projeto desenvolvido para fins educacionais e portfólio.
+* **DESENVOLVIMENTO:** Henrique Castro
+* **ASSETS:** Imagens inspiradas na franquia Super Mario (Nintendo).
+* **LICENÇA:** Projeto desenvolvido para fins educacionais e portfólio.
